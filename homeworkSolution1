@@ -1,0 +1,11 @@
+fun main() {
+
+    println(getLength("This is a string!"))
+}
+
+fun getLength(str:String?):Int {
+    if (str == null)
+        return 0
+    else
+        return str.length
+}
