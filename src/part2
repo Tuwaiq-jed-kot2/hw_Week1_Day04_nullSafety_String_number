@@ -1,0 +1,8 @@
+
+fun main() {
+    val nameSting = "The quick brown fox jumps over the lazy dog."
+    val startIndex = 4
+    val endIndex = 20
+    val substring = nameSting.subSequence(startIndex, endIndex)
+    println("The substring is : " + substring)
+}

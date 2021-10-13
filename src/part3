@@ -1,0 +1,11 @@
+fun main() {
+    println("212.0 in degree fahrenheit is ${tem(212.0)} equals to in 100 celsius ")
+
+}
+fun tem(fahe:Double) :Double {
+    var cels=(5*(fahe-32)/9)
+    return cels
+}
+fun printTem(){
+    return println("degree fahrenheit is equals to in 100 celsius")
+}
