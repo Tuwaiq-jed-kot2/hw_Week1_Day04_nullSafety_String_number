@@ -20,18 +20,26 @@ fun getLength(str: String?) : Int {
     
     return str.length;
 }
+////////////// My code
 
 fun main(args: Array<String>) {
-  println(getLength('This is a string!'))
+    println(getLength("This is a string!"))
 }
-```
+
 fun getLength(str: String?) {
 // Add null check here
-val str:String?=null
-if (str != null) {
-println (str.length)
+    val str:String?=null
+    if (str != null) {
+        println (str.length)
+    }
+    else{
+     println(0)
+    }
 }
-}
+/////////// end my code
+
+
+
 
     fun main(args: Array<String>) {
         println(getLength("This is a string!"))
