@@ -1,0 +1,13 @@
+//Part II - Strings.
+val sub = "The quick brown fox jumps over the lazy dog."
+fun main() {
+    getSubstring()
+
+
+
+}
+fun getSubstring(){
+    val subing = sub.substring(10, 26)
+    println("old = $sub")
+    println("new = $subing")
+}

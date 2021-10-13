@@ -1,0 +1,16 @@
+//Part III - Numbers.
+fun main() {
+    getFahrenheit()
+}
+fun getFahrenheit(){
+    val F: Int? = null
+
+
+    if (F != null ) {
+        var c= ((5*(F-32))/9)
+        println("${F.toDouble()} degree Fahrenheit is equal to ${c.toDouble()} in Celsius.")
+    }else{
+        print("null can't be a degree ")
+    }}
+
+
