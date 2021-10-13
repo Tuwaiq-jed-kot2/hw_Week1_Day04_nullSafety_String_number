@@ -1,3 +1,1 @@
-fun main(){
-
-}
+//Solutions are divided in the other 3 files
