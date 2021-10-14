@@ -1,6 +1,6 @@
 fun getLength(str: String?) : Int? {
     if (str == null) {
-        println("0")
+        return 0
     } else {
         println(str)
     }
