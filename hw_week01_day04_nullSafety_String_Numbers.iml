@@ -1,12 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output />
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-    </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
-  </component>
-</module>
+//unswer 1 //
+
+
+fun main (array: Array<String>){
+val str1 = "Besh yahya"
+val str2 = " Hellow"
+val startIndex = 2
+val endIndex = 2
+val substring = str1.subSequence(startIndex, endIndex)
+val substring2 = str2.subSequence(startIndex, endIndex)
+println("My name: " + substring)
+println("anything: " + substring2)
+}
+
+
+ //unswer 2 //
+
+ fun main() {
+     var f = 212.0
+     var c = (f - 32.0) * 5.0 / 9.0
+
+     var conversion = "$f degrees Fahrenheit = $c degrees Celsius"
+
+     println(conversion)
+ }
+
+ //unswer 3 //
+ fun main() {
+     val celsius =addFahrnenhetNum(null)
+     println(celsius)
+ }
+ fun addFahrnenhetNum(addFahrnenhetNum : Float?):String {
+     if (addFahrnenhetNum==null){
+         return("write fahrenheit degree")
+
+     }else{
+         return ("$addFahrnenhetNum degrees Fahrenheit = ${((addFahrnenhetNum- 32) *5) /9 }degrees Celsius")
+     }
+
+ }
