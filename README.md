@@ -16,7 +16,7 @@ returns zero if `str` is null:
 <?code-excerpt "null_safety_codelab/bin/type_promotion.dart" replace="/.*if\ \(.*\n.*\n.*//g"?>
 ```dart:run-dartpad:ga_id-null_checking:null_safety-true
 fun getLength(str: String?) : Int {
-    // Add null check here
+    if
     
     return str.length;
 }
