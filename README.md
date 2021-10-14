@@ -25,6 +25,21 @@ fun main(args: Array<String>) {
   println(getLength('This is a string!'))
 }
 ```
+Answer:
+fun main(args: Array<String>) {
+println(getLength("This is a string!"))
+}
+
+    fun getLength(str: String?) : Int {
+        // Add null check here
+        if (str == null){
+            return 0
+        }
+        else{
+            return str?.length;
+        }
+
+        }
 
 ## Part II - Strings.
 ---
@@ -33,8 +48,16 @@ fun main(args: Array<String>) {
 
 > old = The quick brown fox jumps over the lazy dog.                                                            
 new = brown fox jumps.
+answer:
+
+fun main() {
+
+    val str = "The quick brown fox jumps over the lazy dog.brown fox jumps."
+    println("old = " + str.substring(0 , 44))
+    println("new = " + str.substring(44, 60))
 
 
+}
 ## Part III - Numbers.
 ---
 ###  Write a Kotlin program to convert temperature from Fahrenheit to Celsius degree.
@@ -43,6 +66,18 @@ new = brown fox jumps.
 ###### Use this equation:
 >  C = (5 (F-32)) / 9.
 ###### Expected Output:
+answer:
+fun main() {
+
+    val f = 212
+    println(convert(f))
+}
+
+
+fun convert(f :Int ):Int {
+
+    return (5* (f-32)) / 9
+}
 
 > 212.0 degree Fahrenheit is equal to 100.0 in Celsius.
 
