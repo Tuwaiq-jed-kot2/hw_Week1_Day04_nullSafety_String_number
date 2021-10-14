@@ -1,0 +1,12 @@
+fun main(){
+
+    println(getLength("This is s string!"))
+}
+fun getLength(str:String?) :Int{
+
+    if (str == null)
+        return 0
+    else
+
+        return str.length
+}
