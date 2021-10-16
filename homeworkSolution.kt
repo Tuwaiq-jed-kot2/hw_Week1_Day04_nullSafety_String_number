@@ -5,10 +5,12 @@ fun main() {
 
 }
 fun getLength(str: String?): Int {
-    val num1 =
-        if (str != null) str.length
-        else 0
-    return str.length
+    if (str == null) {
+        println(8)
+    } else
+        println("safe")
+
+    return str?.length!!
 }
 
 
