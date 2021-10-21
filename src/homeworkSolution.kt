@@ -1,16 +1,16 @@
 fun main() {
-    fun getLength(str: String?): Int {
-        var getLength: String = ""
-
+    fun getLength(str: String?): Int? {
 
         if (str == null) {
             return 0
+
         } else {
-            return str.length
+            return str?.length
+
         }
-
-
     }
+    println(getLength("This is a string!"))
+}
 
 
     fun main() {
@@ -19,23 +19,25 @@ fun main() {
         val endIndex = 24
         val substring = str1.subSequence(startIndex, endIndex)
         println("the substring is :" +substring)
+        // it must return Inj
 
 
 
     }
 
 
-    fun main() {
-        fun addNum(num1 : Double) :Double {
+fun main() {
+    fun addNum(num1 : Double?) :Double {
 
-            return (5* (212.0-32)) / 9
-        }
-
-
-    } //i try my best as you toled me . sorry if my solutions disappointed you guys :(
+        return (5* (num1!!.minus(32)) / 9)
 
 
+    }
+
+    println(addNum(212.0))
 
 
 
 }
+
+
