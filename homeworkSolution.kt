@@ -1,16 +1,14 @@
 
 // part 1
-fun main() {
-    println(getLength("This is a string"))
-
+fun main(args: Array<String>) {
+    println(getLength("this is a string"))
 }
-fun getLength(str: String?): Int {
-    if (str == null) {
-        println(8)
-    } else
-        println("safe")
+fun getLength(str: String?):Int{
+    if (str != null) {
+        return str.length;
 
-    return str?.length!!
+    }
+    return 0
 }
 
 
