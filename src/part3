@@ -3,7 +3,7 @@ fun main() {
 
 }
 fun tem(fahe:Double) :Double {
-    var cels=(5*(fahe-32)/9)
+    var cels=(5*(fahe?.minus(32))/9)
     return cels
 }
 fun printTem(){
