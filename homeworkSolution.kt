@@ -30,18 +30,19 @@ fun main() {
 
 //part 3 - Numbers
 
-import java.util.*
+fun main()  {
 
-fun main() {
+    val fahrenheit:Double? = 212.0  // or null
 
-    val scanner = Scanner(System.`in`)
+    if (fahrenheit != null) {
 
-    print("Enter temperature into Fahrenheit : ")
+        val celsius:Double? = (fahrenheit?.minus(32))?.times(5)?.div(9)
 
-    val fahrenheit = scanner.nextDouble()
+        println("$fahrenheit degree Fahrnheit is equal too $celsius in Celsius")
 
-    val celsius = ((fahrenheit - 32) * 5) / 9
-
-    println("$fahrenheit degree Fahrnheit is equal too $celsius in Celsius")
+    }else{
+        println("enter null value")
+    }
 
 }
+
